@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Supplies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="indexScript.js" defer></script>
+</head>
+<body>
+    <h1>Bag Pack</h1>
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="box1" data-name="Notebook">Notebook</div>
+        <div class="box" draggable="true" id="box2" data-name="Pencil">Pencil</div>
+        <div class="box" draggable="true" id="box3" data-name="Ruler">Ruler</div>
+        <div class="box" draggable="true" id="box4" data-name="Eraser">Eraser</div>
+        <div class="box" draggable="true" id="box5" data-name="Scissors">Scissors</div>
+        <div class="box" draggable="true" id="box6" data-name="Colored pencils">Colored pencils</div>
+        <div class="box" draggable="true" id="box7" data-name="Glue stick">Glue stick</div>
+        <div class="box" draggable="true" id="box8" data-name="Pad paper">Pad paper</div>
+        <div class="box" draggable="true" id="box9" data-name="Pencil case">Pencil case</div>
+        <div class="box" draggable="true" id="box10" data-name="Sharpener">Sharpener</div>
+    </div>
+
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box1">
+            <img src="notebook.jpg">
+            <span class="item-label">Notebook</span>
+        </div>
+        <div class="droppable" data-draggable-id="box2">
+            <img src="pencil.jpg">
+            <span class="item-label">Pencil</span>
+        </div>
+        <div class="droppable" data-draggable-id="box3">
+            <img src="ruler.jpg">
+            <span class="item-label">Ruler</span>
+        </div>
+        <div class="droppable" data-draggable-id="box4">
+            <img src="eraser.jpg">
+            <span class="item-label">Eraser</span>
+        </div>
+        <div class="droppable" data-draggable-id="box5">
+            <img src="scissors.jpg">
+            <span class="item-label">Scissors</span>
+        </div>
+        <div class="droppable" data-draggable-id="box6">
+            <img src="coloredpencils.jpg">
+            <span class="item-label">Colored pencils</span>
+        </div>
+        <div class="droppable" data-draggable-id="box7">
+            <img src="gluestick.jpg">
+            <span class="item-label">Glue stick</span>
+        </div>
+        <div class="droppable" data-draggable-id="box8">
+            <img src="padpaper.jpg">
+            <span class="item-label">Pad paper</span>
+        </div>
+        <div class="droppable" data-draggable-id="box9">
+            <img src="pencilcase.jpg">
+            <span class="item-label">Pencil case</span>
+        </div>
+        <div class="droppable" data-draggable-id="box10">
+            <img src="sharpener.jpg">
+            <span class="item-label">Sharpener</span>
+        </div>
+    </div>
+
+    <div class="board">
+        Remarks:<p id="remarks"></p>
+        Score:<p id="scores"></p>
+    </div>
+</body>
+</html>
