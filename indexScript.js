@@ -1,4 +1,3 @@
-
 const draggableElements = document.querySelectorAll('.box');
 const droppableElements = document.querySelectorAll('.droppable');
 let score = 0;
@@ -31,6 +30,9 @@ droppableElements.forEach(element => {
             score += 1;
             document.getElementById('remarks').innerText = "RIGHT!";
             document.getElementById('scores').innerText = score;
+            
+            // Hide the item from the draggable list
+            draggedElement.style.display = 'none';
         } else {
             // Incorrect match
             document.getElementById('remarks').innerText = "WRONG!";
@@ -40,5 +42,11 @@ droppableElements.forEach(element => {
     // DRAG OVER
     element.addEventListener('dragover', (event) => {
         event.preventDefault();
+        
+        
     });
 });
+
+function reset(event) {
+    location.reload();
+}
